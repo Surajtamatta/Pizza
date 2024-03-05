@@ -1,0 +1,205 @@
+h1{
+  color: white;
+}
+.NavbarItems{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 0 25px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 5px 15px rgba(0.0.0.0.25);
+  width: 95%;
+  border-radius: 13px;
+  height: 55px;
+  position:absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 99;
+  position: fixed;
+}
+.nav-menu{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  
+  display:grid;
+  grid-column-end: auto;
+  place-items: center;
+  grid-template-columns: repeat(7,auto);
+  grid-gap:10px;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+}
+.nav-menu li{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration:none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  display: flex;
+
+  padding: 0  0.5rem ;
+  white-space: nowrap;
+}
+
+.nav-links:hover{
+  
+  color: rgb(84, 81, 77);
+}
+#Social-links{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 0 0;
+  white-space: nowrap;
+}
+#Social-links:hover{
+  color:rgb(84, 81, 77);
+}
+
+.fa-bars,.fa-times{
+  color:rgb(255, 255, 255);
+
+}
+.fa-search{
+  color: white;
+  text-decoration: none;
+}
+
+.menu-icons{
+  display: none;
+}
+.quantity{
+  font-size: 12px;
+  background-color: red;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: -5px;
+  top: 15px;
+  border-radius: 50%;
+}
+@media screen and (max-width:700px) {
+  .NavbarItems{
+    z-index: 99; 
+    width: 80%;
+    height: 55px;
+
+  }
+   .nav-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    background:rgba(102, 7, 26, 0.301);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.336);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 83vh;
+    border-radius: 13px;
+    position: absolute;
+    top: 0;
+    left: -110%;
+    align-items: stretch;
+    padding: 80px 0 30px 0;
+    margin: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-menu.active{
+    left: 0%;
+  }
+  .nav-links{
+    padding: 1.3rem 1rem;
+    color: rgb(244, 243, 243);
+    font-size: 24px;
+    display: block;
+  } 
+  .nav-links:hover{
+    background: rgba(255, 255, 255, 0.167);
+    backdrop-filter: blur(20px);
+  } 
+  .menu-icons{
+    display: block;
+    position: fixed;
+    right: 22px;
+  }
+  #Social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding:1.3rem 0 ;
+    color: rgb(255, 255, 255);
+
+  }
+  #Social-links:hover{
+    background: rgba(255, 255,255, .25);
+    backdrop-filter: blur(20px);
+  } 
+}
+
+
+
+.dropdown{
+  height: 100%;
+  width: 100%;
+  
+}
+
+.dropdown-content {
+  
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:active .dropbtn {
+  background-color: #616d61;
+}
+.dropbtn{
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 0 10px;
+}

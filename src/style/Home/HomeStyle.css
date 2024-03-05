@@ -1,0 +1,250 @@
+
+section{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background: rgb(0,0,0);
+    background: linear-gradient(96deg, rgba(0,0,0,1) 1%, rgba(0,0,0,1) 11%, rgba(34,15,16,1) 35%, rgba(41,6,8,1) 54%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 87%, rgba(0,0,0,1) 99%);
+    
+}
+.background{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: #7c0000;
+background-image: linear-gradient(326deg, #7c0000 0%, #3e0000 74%);
+    height: 78vh;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container{
+    position: relative;
+    top:65px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 13px;
+    height: 80vh;
+    width: 88%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+  
+}
+.sliderDescriptionBox{
+    width: 100%;
+    display:flex;
+    height: 100%;
+    justify-content:flex-end;
+}
+.discriptionBox{
+    
+    display: flex;
+    justify-content:center;
+    background-color:rgba(110, 11, 30, 0.284) ;
+    border-radius: 13px;
+    backdrop-filter: blur(4px);
+    width: 600px;
+    height: 100%;
+    gap:5px;
+    flex-direction:column;
+    align-items:center;
+}
+.fa-chevron-left{
+    color: rgba(209, 201, 201, 0.773);
+    font-size:22px
+}
+
+.fa-chevron-right{
+    color: rgba(209, 201, 201, 0.773);
+    font-size:25px;
+}
+.fa-chevron-left:hover, .fa-chevron-right:hover{
+    color: rgb(255, 255, 255);
+    font-size:27px;
+}
+.Arrow{
+    width: 6%;
+    display: flex;
+    justify-content: space-around;
+}
+.contentBox{
+    width: 100%;
+    max-width: 500px;
+    gap:5px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    justify-content:center;
+    color: rgb(251, 251, 251);
+}
+.contentBox h1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.contentBox .InfoButton{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    border: 4px solid rgb(93, 8, 25);
+    padding: 7px 25px;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+.InfoButton:hover{
+    background-color: rgb(93, 8, 25);;
+    border: 4px solid rgb(0, 0, 0);
+}
+.contentBox .ImageDiscription{
+    font-size: 30px;
+}
+.contentBox p{
+    text-align: right;
+    font-size: 18px;
+}
+
+.Card-templete{
+
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    position: relative;
+    top: -5vh;
+    justify-content:center;
+    gap: 20px;
+    width: 87%;
+}
+.Card{
+    z-index: 1;
+    background-color:rgba(255, 253, 253, 0.456);
+    box-shadow: rgba(166, 22, 22, 0.789) 3px 3px 6px 0px inset, rgba(254, 254, 254, 0.833) -3px -3px 6px 1px inset,rgba(181, 39, 39, 0.756) 1.95px 1.95px 2.6px;
+    backdrop-filter: blur(6px);
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+    height: 23vh;
+    padding: 10px;
+}
+.Image{
+    display: flex;
+    height: 170px;
+    width: 170px;
+    justify-content: center;
+}
+.cardInfo{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.cardInfo h1{
+    padding: 8px;
+    text-align: center;
+    font-size:18px;
+}
+.cardInfo p{
+    text-align: center;
+    font-size: 12px;
+}
+
+.cardInfo .OrderButton{
+    color:rgb(255, 255, 255);
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    border: 4px solid rgb(93, 8, 25);
+    padding:5px;
+    border-radius: 3px;
+
+}
+.OrderButton:hover{
+    background-color: rgb(93, 8, 25);;
+    border: 4px solid rgb(0, 0, 0);
+}
+.Card:hover{
+    box-shadow: rgba(149, 17, 17, 0.666) 0px 30px 60px -12px inset, rgba(172, 13, 13, 0.792) 0px 18px 36px -18px inset;
+}
+
+
+@media screen and (max-width:850px) {
+    .sliderDescriptionBox{
+       background-color:rgba(100, 102, 101, 0.2) ;
+       display:flex;
+       align-items: center;
+       min-height: fit-content;
+   }
+   .discriptionBox{
+    background-color:rgba(110, 11, 31, 0.322);
+       box-shadow: 0 0 0 0 rgba(100, 102, 101, 0.737);
+       backdrop-filter: blur(2px);
+       width:100%;
+       justify-content: center;
+       display:flex;
+    
+   }
+   .contentBox{
+       gap:5px;
+       display:flex;
+       flex-direction:column;
+       align-items:center;
+       justify-content:center;
+       color: rgb(251, 251, 251);
+   }
+   .contentBox h1{
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       font-size:50px
+   }
+   .contentBox p{
+    text-align: center;
+    font-size: 18px;
+}
+   p{
+    text-align: center; 
+   }
+   .Card{
+    width: 18rem;
+    height: 216px;
+   }
+}
+
+
+
+.Heading{
+    color: aliceblue;
+    padding: 20px;
+    font-family:"Comfortaa";
+    font-size: 35px ;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:-5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+ .currentSlide {
+    transition-duration: 0.5s ease;
+    opacity: 0;
+ }
+ .currentSlide.active {
+    opacity: 1;
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+ }
+ 
